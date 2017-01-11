@@ -25,4 +25,13 @@ public class ThisIsWhatIWantToCheckTest {
     assertEquals(100, myObj.addSomeNumbers(40,65,20));
   }
   
+  @Test
+  public void nextLightTest() throws Exception {
+    ThisIsWhatIWantToCheck myObj = new ThisIsWhatIWantToCheck();
+  
+    assertEquals("green", myObj.nextLight("red"));
+    assertEquals("yellow", myObj.nextLight("green"));
+    assertEquals("red", myObj.nextLight("yellow"));
+  }
+  
 }

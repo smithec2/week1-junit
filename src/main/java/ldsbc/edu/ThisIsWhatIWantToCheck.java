@@ -24,4 +24,17 @@ public class ThisIsWhatIWantToCheck {
     return number1 + number2;
   }
   
+  
+  /**
+   * Stop Light
+   */
+  public String nextLight(String color)
+  {
+//    String retVal = "";
+//    switch (color)
+//    case "red":
+//    default:
+    return null;
+  }
+   
 }
