@@ -10,10 +10,19 @@ import static junit.framework.TestCase.assertEquals;
  */
 public class ThisIsWhatIWantToCheckTest {
   @Test
-  public void getHello() throws Exception {
+  public void getHelloTest() throws Exception {
     ThisIsWhatIWantToCheck myObj = new ThisIsWhatIWantToCheck();
   
     assertEquals("Hello", myObj.getHello());
+  }
+  
+  @Test
+  public void addSomeNumbersTest() throws Exception {
+    ThisIsWhatIWantToCheck myObj = new ThisIsWhatIWantToCheck();
+  
+    assertEquals(10, myObj.addSomeNumbers(4,6,2));
+    assertEquals(7, myObj.addSomeNumbers(5,0,2));
+    assertEquals(100, myObj.addSomeNumbers(40,65,20));
   }
   
 }
